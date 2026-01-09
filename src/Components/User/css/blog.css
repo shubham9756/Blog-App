@@ -1,0 +1,44 @@
+/* Custom styles for blog page */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-title a {
+  transition: color 0.2s ease;
+}
+
+.card-title a:hover {
+  color: #0d6efd !important;
+}
+
+/* Custom border radius */
+.rounded-4 {
+  border-radius: 1rem !important;
+}
+
+/* Better pagination styling */
+.page-link {
+  border-radius: 0.5rem !important;
+  margin: 0 0.25rem;
+}
+
+.page-link:hover {
+  background-color: #f8f9fa;
+}
+
+/* Form control focus styling */
+.form-control:focus, .form-select:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Category filter buttons */
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}

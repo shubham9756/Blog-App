@@ -1,0 +1,47 @@
+/* Custom CSS for dark theme enhancements */
+.hover-text-white:hover {
+  color: #ffffff !important;
+}
+
+.transition-200 {
+  transition: all 0.2s ease-in-out;
+}
+
+.text-light-50 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.bg-dark {
+  background-color: #111111 !important;
+}
+
+/* Form control dark theme */
+.form-control.bg-dark {
+  background-color: #1a1a1a !important;
+  border: 1px solid #333333 !important;
+}
+
+.form-control.bg-dark:focus {
+  background-color: #1a1a1a;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  color: #ffffff;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}

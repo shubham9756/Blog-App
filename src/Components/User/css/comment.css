@@ -1,0 +1,67 @@
+.comment-box {
+  max-width: 70%;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* Own comment → Right */
+.comment-box.own {
+  margin-left: auto;
+  background: #dcf8c6;
+  text-align: right;
+}
+
+/* Other comment → Left */
+.comment-box.other {
+  margin-right: auto;
+  background: #f1f1f1;
+  text-align: left;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.username {
+  color: #333;
+}
+
+.right-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Like */
+.like-btn {
+  cursor: pointer;
+  font-size: 13px;
+  color: #e0245e;
+}
+
+.like-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Delete */
+.delete-icon {
+  cursor: pointer;
+  font-size: 14px;
+  color: #dc3545;
+}
+
+.delete-icon:hover {
+  color: #a71d2a;
+}
+
+.comment-text {
+  font-size: 14px;
+  color: #222;
+}

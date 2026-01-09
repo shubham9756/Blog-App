@@ -1,0 +1,46 @@
+/* Form control focus states */
+.form-control:focus, .form-select:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+}
+
+/* Card shadow and hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Button hover effects */
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Textarea resizing */
+textarea.form-control {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Form label spacing */
+.form-label {
+  font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  .form-control-lg {
+    font-size: 1rem;
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import './css/About.css'
+import './css/about.css'
 const About = () => {
   const teamMembers = [
     { name: "Alex Johnson", role: "Founder & CEO", bio: "Passionate about creating platforms that empower writers.", avatar: "👨‍💻" },

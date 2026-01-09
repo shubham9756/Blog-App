@@ -10,7 +10,7 @@ const MyBlog = () => {
   useEffect(() => {
     const fetchMyBlogs = async () => {
       try {
-        const res = await fetch(`https://blog-appbackend.vercel.app//myBlog/${id}`, {
+        const res = await fetch(`https://blog-appbackend.vercel.app/myBlog/${id}`, {
           credentials: "include",
         });
         const data = await res.json();
@@ -34,7 +34,7 @@ const MyBlog = () => {
   if (!confirmDelete) return;
 
   try {
-    const res = await fetch(`https://blog-appbackend.vercel.app//blog/delete/${blogId}`, {
+    const res = await fetch(`https://blog-appbackend.vercel.app/blog/delete/${blogId}`, {
       method: "DELETE",
       credentials: "include",
     });
@@ -83,7 +83,7 @@ const MyBlog = () => {
           {blogs.map((blog) => (
             <div className="blog-card" key={blog._id}>
               <img
-                src={`https://blog-appbackend.vercel.app//upload/${blog.thumbnail}`}
+                src={`https://blog-appbackend.vercel.app/upload/${blog.thumbnail}`}
                 alt={blog.title}
                 className="blog-image"
               />

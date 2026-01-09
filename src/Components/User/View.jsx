@@ -8,7 +8,7 @@ const View = ({ user }) => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        await fetch(`https://blog-appbackend.vercel.app//viewBlog/${id}`, {
+        await fetch(`https://blog-appbackend.vercel.app/viewBlog/${id}`, {
           method: 'GET',
           credentials: 'include',
         }).then(res => res.json())
@@ -54,7 +54,7 @@ const View = ({ user }) => {
                     <span className="text-white">
                       {data?.thumbnail ? (
                         <img
-                          src={`https://blog-appbackend.vercel.app//upload/${data.thumbnail}`}
+                          src={`https://blog-appbackend.vercel.app/upload/${data.thumbnail}`}
                           alt={data.title}
                           className="img-fluid"
                           style={{ "height": "250px" }}

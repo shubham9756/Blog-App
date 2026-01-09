@@ -28,7 +28,7 @@ const Blog = () => {
   // 🔹 Fetch blogs
   useEffect(() => {
     setLoading(true);
-    fetch(`https://blog-appbackend.vercel.app//blogs`, {
+    fetch(`https://blog-appbackend.vercel.app/blogs`, {
       method: "GET",
       credentials: "include",
     })
@@ -76,7 +76,7 @@ const Blog = () => {
   };
   const handleLikes = async (id) => {
     try {
-      const res = await fetch(`https://blog-appbackend.vercel.app//likes/${id}`, {
+      const res = await fetch(`https://blog-appbackend.vercel.app/likes/${id}`, {
         method: "POST",
         credentials: "include",
         headers: {
@@ -166,7 +166,7 @@ const Blog = () => {
                     <div style={{ height: "200px" }}>
                       {data.thumbnail ? (
                         <img
-                          src={`https://blog-appbackend.vercel.app//upload/${data.thumbnail}`}
+                          src={`https://blog-appbackend.vercel.app/upload/${data.thumbnail}`}
                           alt={data.title}
                           className="img-fluid w-100 h-100 object-fit-cover"
                         />

@@ -21,7 +21,7 @@ const App = () => {
   useEffect(() => {
     const callApi = async () => {
       try {
-        const res = await fetch("https://blog-appbackend.vercel.app//checkUser", {
+        const res = await fetch("https://blog-appbackend.vercel.app/checkUser", {
           credentials: "include",
         });
 

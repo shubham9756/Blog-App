@@ -18,7 +18,7 @@ const ForgotPassword = () => {
     setMessage("");
 
     try {
-      const res = await fetch("https://blog-appbackend.vercel.app//forgotPassword", {
+      const res = await fetch("https://blog-appbackend.vercel.app/forgotPassword", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -48,7 +48,7 @@ const ForgotPassword = () => {
     setMessage("");
 
     try {
-      const res = await fetch("https://blog-appbackend.vercel.app//verify-otp", {
+      const res = await fetch("https://blog-appbackend.vercel.app/verify-otp", {
         method: "POST",
         credentials: "include",
         headers: {

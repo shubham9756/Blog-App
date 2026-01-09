@@ -6,7 +6,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    await fetch('http://localhost:1000/login', {
+    await fetch('https://blog-appbackend.vercel.app//login', {
       method: 'POST',
       credentials: "include",   //
       headers: {

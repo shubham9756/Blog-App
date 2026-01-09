@@ -28,7 +28,7 @@ const NewPassword = () => {
     console.log(JSON.stringify({ password }))
 
     try {
-      const res = await fetch("http://localhost:1000/set-newpassword", {
+      const res = await fetch("https://blog-appbackend.vercel.app//set-newpassword", {
         method: "POST",
         credentials: "include",
         headers: {

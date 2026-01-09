@@ -7,7 +7,7 @@ const Comment = ({ blogId, user }) => {
 
   /* 🔹 Load old comments */
   useEffect(() => {
-    fetch(`http://localhost:1000/comments/${blogId}`, {
+    fetch(`https://blog-appbackend.vercel.app//comments/${blogId}`, {
       credentials: "include",
     })
       .then(res => res.json())

@@ -63,7 +63,7 @@ const CreateBlog = () => {
     formData.append("description", form.description);
     formData.append("content", form.content);
     // api
-    fetch("http://localhost:1000/blogs", {
+    fetch("https://blog-appbackend.vercel.app//blogs", {
     credentials: "include",
       method: "POST",
       body: formData,

@@ -34,7 +34,7 @@ const Register = () => {
     formData.append("password", form.password)
     formData.append("profileImage", form.profile_image)
 
-    await fetch('http://localhost:1000/register', {
+    await fetch('https://blog-appbackend.vercel.app//register', {
       method: "POST",
       body: formData,
     }).then((res) => { return res.json() }).then((data) => {

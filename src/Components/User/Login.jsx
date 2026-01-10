@@ -17,6 +17,7 @@ const Login = () => {
 
       if (data.success == true) {
         window.location.href = '/'
+        console.log("data :",data)
       } else {
         console.log(data)
         showAlert("danger", data.message)

@@ -19,7 +19,7 @@ const EditBlog = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await fetch(`https://blog-appbackend.vercel.app/blog/${id}`, {
+        const res = await fetch(`https://blog-app-backend-odgo.onrender.com/blog/${id}`, {
           credentials: "include",
         });
         const data = await res.json();
@@ -61,7 +61,7 @@ const EditBlog = () => {
     }
 
     try {
-      const res = await fetch(`https://blog-appbackend.vercel.app/blog/update/${id}`, {
+      const res = await fetch(`https://blog-app-backend-odgo.onrender.com/blog/update/${id}`, {
         method: "PUT",
         credentials: "include",
         body: formData,
@@ -142,7 +142,7 @@ const EditBlog = () => {
                   <div className="mb-3">
                     <label className="form-label">Current Thumbnail</label>
                     <img
-                      src={`https://blog-appbackend.vercel.app/upload/${oldThumbnail}`}
+                      src={`https://blog-app-backend-odgo.onrender.com/upload/${oldThumbnail}`}
                       className="img-fluid rounded mb-2"
                       alt="Old Thumbnail"
                     />

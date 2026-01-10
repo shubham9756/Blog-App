@@ -4,7 +4,7 @@ const Profile = () => {
   const [user, setUser] = useState(null);
   useEffect(() => {
     const callApi = async () => {
-      const res = await fetch("https://blog-appbackend.vercel.app/checkUser", {
+      const res = await fetch("https://blog-app-backend-odgo.onrender.com/checkUser", {
         credentials: "include"   // 🔥 MUST
       });
       const data = await res.json();
@@ -18,7 +18,7 @@ const Profile = () => {
   }, []);
 
   const handleLogout = async () => {
-    await fetch("https://blog-appbackend.vercel.app/logout", {
+    await fetch("https://blog-app-backend-odgo.onrender.com/logout", {
       method: "get",
       credentials: "include"
       // T
@@ -49,7 +49,7 @@ const Profile = () => {
                   <div className="rounded-circle bg-secondary text-white d-inline-flex justify-content-center align-items-center"
                     style={{ width: "100px", height: "100px" }}>
                     {user?.profileImage ? (
-                      <img src={`https://blog-appbackend.vercel.app/upload/${user?.profileImage}`} alt="Profile" className="rounded-circle" style={{ width: "100px", height: "100px", objectFit: "cover" }} />
+                      <img src={`https://blog-app-backend-odgo.onrender.com/upload/${user?.profileImage}`} alt="Profile" className="rounded-circle" style={{ width: "100px", height: "100px", objectFit: "cover" }} />
                     ) : (
                       <span className="fs-2">{user?.username?.charAt(0)}</span>
                     )}

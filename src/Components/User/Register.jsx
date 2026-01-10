@@ -34,7 +34,7 @@ const Register = () => {
     formData.append("password", form.password)
     formData.append("profileImage", form.profile_image)
 
-    await fetch('https://blog-appbackend.vercel.app/register', {
+    await fetch('https://blog-app-backend-odgo.onrender.com/register', {
       method: "POST",
       body: formData,
     }).then((res) => { return res.json() }).then((data) => {
